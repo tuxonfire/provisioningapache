@@ -1,2 +1,2 @@
 # provisioningapache
-Installing apache
+Installing apache and removing apache instalation
