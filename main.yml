@@ -9,7 +9,6 @@
       - python3-mod_wsgi
     apache_test_message: This is a test message
   tasks:
-
   - name: install httpd packages
     yum:
       name: "{{ item }}"
