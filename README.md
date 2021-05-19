@@ -1,2 +1,2 @@
 # provisioningapache
-Installing apache and removing apache instalation
+Installing apache in a single play
