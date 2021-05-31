@@ -1,7 +1,7 @@
 ---
 - name: Install Apache playbook
   hosts: "{{ playbook_target }}"
-  become: yes
+#  become: yes
   gather_facts: false
   vars:
     httpd_packages:
