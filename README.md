@@ -7,5 +7,5 @@ This playbook will be executed according to the environment choosed in the inven
 2. vagrant
 
 extra_vars survey in Job Template
-hosts: "{{ playbook_target }}"
- 
+#hosts: "{{ playbook_target }}"
+ hosts: all
