@@ -1,5 +1,5 @@
-[vagrantmachine]
-10.10.1.3
+[aws]
+18.219.211.61
 
 [all:vars]
 foo:bar
