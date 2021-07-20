@@ -1,6 +1,6 @@
 ---
 - name: Install Apache playbook
-  hosts: all
+  hosts: aws
 #  become: yes
   gather_facts: false
   vars:
