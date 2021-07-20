@@ -1,6 +1,6 @@
 ---
 - name: Install Apache playbook
-  hosts: "{{ playbook_target }}"
+  hosts: all
 #  become: yes
   gather_facts: false
   vars:
