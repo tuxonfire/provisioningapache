@@ -8,4 +8,6 @@ This playbook will be executed according to the environment choosed in the inven
 
 extra_vars survey in Job Template
 hosts: "{{ playbook_target }}"
+
+#Testing a behavior
  
