@@ -3,6 +3,5 @@
 
 [all:vars]
 foo:bar
-git_branch: master
 
 
