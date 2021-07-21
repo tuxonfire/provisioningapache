@@ -1,7 +1,8 @@
 [aws]
-18.219.211.61
+18.222.226.33
 
 [all:vars]
 foo:bar
+git_branch: master
 
 
