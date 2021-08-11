@@ -1,6 +1,5 @@
 [vagrant]
-3.16.206.8
-
+18.223.252.61
 [all:vars]
 bar:foo
 
