@@ -1,0 +1,14 @@
+---
+- name: Install Apache playbook
+  hosts: all  
+  become: yes
+  gather_facts: false
+  vars:
+    ansible_become_flags: '-H -S -n -i'
+
+  tasks:
+  - name: restart apache service
+    service:
+      name: httpd
+      state: restarted
+      enabled: yes
