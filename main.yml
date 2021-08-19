@@ -1,7 +1,7 @@
 ---
 - name: Install Apache playbook
   hosts: all  
-  become: yes
+#  become: yes
   gather_facts: false
   vars:
     ansible_become_flags: '-H -S -n -i'
