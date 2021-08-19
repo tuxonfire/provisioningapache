@@ -4,7 +4,7 @@
   become: yes
   gather_facts: false
   vars:
-    ansible_become_flags: '-H -S -n -i'
+#    ansible_become_flags: '-H -S -n -i'
     httpd_packages:
       - httpd
       - python3-mod_wsgi
