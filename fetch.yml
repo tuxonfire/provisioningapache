@@ -7,7 +7,7 @@
     - name: pull xml back
       fetch:
         src: /opt/oscap/DISA-xccdf-RHEL8V1R2.xml
-        dest: /var/lib/awx/projects/OSCAP_RHEL8/files/xml_files/
+        dest: /home/ec2-user
         
 
     - name: pull html back rp
