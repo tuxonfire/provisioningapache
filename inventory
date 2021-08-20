@@ -1,4 +1,4 @@
-[vagrant]
+[aws]
 18.117.191.116	
 
 [all:vars]
