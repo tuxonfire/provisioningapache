@@ -8,7 +8,7 @@
       fetch:
         src: /opt/oscap/DISA-xccdf-RHEL8V1R2.xml
         dest: /var/lib/awx/projects/OSCAP_RHEL8/files/xml_files/
-        flat: yes
+        
 
     - name: pull html back rp
       fetch:
