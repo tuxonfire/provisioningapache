@@ -1,0 +1,19 @@
+---
+- hosts: all
+  gather_facts: no
+  become: true
+
+  tasks:
+    - name: pull xml back
+      fetch:
+        src: /opt/oscap/DISA-xccdf-RHEL8V1R2.xml
+        dest: /var/lib/awx/projects/OSCAP_RHEL8/files/xml_files/
+        flat: yes
+
+    - name: pull html back rp
+      fetch:
+        src: /opt/oscap/DISA-xccdf-RHEL8V1R2.html
+        dest: /var/lib/awx/projects/OSCAP_RHEL8/files/html_files/
+        flat: yes
+
+
