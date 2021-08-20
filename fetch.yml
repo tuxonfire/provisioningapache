@@ -1,5 +1,5 @@
 ---
-- hosts: aws
+- hosts: 18.117.191.116	
   gather_facts: no
   become: true
 
