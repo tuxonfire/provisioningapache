@@ -6,13 +6,13 @@
   tasks:
     - name: pull xml back
       fetch:
-        src: /opt/oscap/DISA-xccdf-RHEL8V1R2.xml
+        src: /home/ec2-user/DISA-xccdf-RHEL8V1R2.xml
         dest: /home/ec2-user/fetch
         flat: yes
 
     - name: pull html back rp
       fetch:
-        src: /opt/oscap/DISA-xccdf-RHEL8V1R2.html
+        src: /home/ec2-user/DISA-xccdf-RHEL8V1R2.html
         dest: /home/ec2-user/fetch
         flat: yes
 
