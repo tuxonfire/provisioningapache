@@ -1,1 +1,14 @@
+---
+
+---
+- hosts: 3.23.88.10	
+  gather_facts: no
+  become: true
+  
+    tasks:
+    - name: restart apache service
+      service:
+        name: httpd
+        state: restarted
+        enabled: yes    
 
