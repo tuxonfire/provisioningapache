@@ -1,20 +1,24 @@
 ---
-# tasks file for awsprovision
-
 - name: Provisioning aws instances
-  ec2:
-    ec2_access_key: "{{ EC2_ACCESS_KEY }}"
-    ec2_secret_key: "{{ EC2_SECRET_KEY }}"
-    key_name: fjaimesc
-    instance_type: t2.medium
-    image: ami-03d64741867e7bb94
-    wait: yes
- #   group: "{{ sg_http_https }}"
-    instance_tags:
-        Name: fjaimesc_a
-    count: 1
-    vpc_subnet_id: "{{ public_subnet }}"
-    assign_public_ip: yes
-    region: "{{ region }}"
-    state: present  #delete instance id
-#    instance_id: 	i-0c855638930c41224
+  hosts: 3.23.88.10
+  become: yes
+  gather_facts: false
+
+  tasks:
+    - name: Provisioning aws instances
+      ec2:
+        ec2_access_key: "{{ EC2_ACCESS_KEY }}"
+        ec2_secret_key: "{{ EC2_SECRET_KEY }}"
+        key_name: fjaimesc
+        instance_type: t2.medium
+        image: ami-03d64741867e7bb94
+        wait: yes
+     #   group: "{{ sg_http_https }}"
+        instance_tags:
+            Name: fjaimesc_a
+        count: 1
+        vpc_subnet_id: "{{ public_subnet }}"
+        assign_public_ip: yes
+        region: "{{ region }}"
+        state: present  #delete instance id
+    #    instance_id: 	i-0c855638930c41224
