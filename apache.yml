@@ -3,6 +3,8 @@
   hosts: 3.128.28.218	  
   become: yes
   gather_facts: false
+  vars:
+     private_key_file: /home/ansible/.ssh/id_rsa
 
   tasks:
   - name: restart apache service
