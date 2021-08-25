@@ -1,6 +1,6 @@
 ---
 - name: Install Apache playbook
-  hosts: 3.128.28.218	  
+  hosts: 18.217.146.160	  
   become: yes
   gather_facts: false
   vars:
