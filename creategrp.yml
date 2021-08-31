@@ -1,0 +1,11 @@
+---
+- name: create a vpc
+  ec2_vpc_net:
+    name: fjaimesc_tst
+    state: present
+    cidr_block: 172.22.0.0/16
+    tags:
+      module: ec2_vpc_net
+      Name: fjaimesc
+#    subnets:
+    region: us-east-2
