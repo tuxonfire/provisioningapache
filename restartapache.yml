@@ -1,6 +1,6 @@
 ---
 - name: Install Apache playbook
-  hosts: 18.218.53.106  
+  hosts: "{{ playbook_target }}"  
   become: yes
   gather_facts: false
   vars:
