@@ -1,7 +1,7 @@
 ---
 - name: Install Apache playbook
-  hosts: 18.217.146.160	  
-#  become: yes
+  hosts: "{{ playbook_target }}" 
+  become: yes
   gather_facts: false
   vars:
  #    private_key_file: /home/ansible/.ssh/id_rsa
